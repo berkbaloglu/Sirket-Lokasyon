@@ -22,7 +22,7 @@
      <rect>
       <x>20</x>
       <y>10</y>
-      <width>461</width>
+      <width>831</width>
       <height>401</height>
      </rect>
     </property>
@@ -69,7 +69,7 @@
        <string>Soyisim</string>
       </property>
      </widget>
-     <widget class="QTextEdit" name="soyisimtxt">
+     <widget class="QTextEdit" name="soyisim">
       <property name="geometry">
        <rect>
         <x>140</x>
@@ -105,7 +105,7 @@
        <string>Tarih</string>
       </property>
      </widget>
-     <widget class="QTextEdit" name="textEdit">
+     <widget class="QTextEdit" name="isim">
       <property name="geometry">
        <rect>
         <x>140</x>
@@ -115,12 +115,49 @@
        </rect>
       </property>
      </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>30</y>
+        <width>261</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QListWidget" name="gecmisList">
+         <item>
+          <property name="text">
+           <string>New Item</string>
+          </property>
+          <property name="flags">
+           <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>0</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600; text-decoration: underline;&quot;&gt;Geçmiş Talepler&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
       <string>Tab 2</string>
      </attribute>
-     <widget class="QTextEdit" name="textEdit_2">
+     <widget class="QTextEdit" name="sifre">
       <property name="geometry">
        <rect>
         <x>160</x>
@@ -130,7 +167,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="girisBtn">
       <property name="geometry">
        <rect>
         <x>210</x>
@@ -156,31 +193,31 @@
        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#17ff17;&quot;&gt;Departman Şifrenizi Girin&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="horizontalLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>40</y>
-      <width>321</width>
-      <height>371</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QListWidget" name="listWidget">
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>0</y>
+        <width>321</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <property name="text">
-         <string>check</string>
-        </property>
-        <property name="checkState">
-         <enum>Checked</enum>
-        </property>
+        <widget class="QListWidget" name="tumList">
+         <item>
+          <property name="text">
+           <string>check</string>
+          </property>
+          <property name="checkState">
+           <enum>Checked</enum>
+          </property>
+         </item>
+        </widget>
        </item>
-      </widget>
-     </item>
-    </layout>
+      </layout>
+     </widget>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
