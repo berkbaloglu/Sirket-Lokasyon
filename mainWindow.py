@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'mainWindow.ui'
+# Form implementation generated from reading ui file 'MainWindow.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.1
 #
@@ -9,34 +9,71 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from TalepWindow import Ui_TalepWindow
+
 
 class Ui_MainWindow(object):
-    def talep(self):
-        self.window = QtWidgets.QMainWindow
-        self.ui = Ui_TalepWindow()
-        self.ui.setupUi(self.window)
-        MainWindow.hide()
-        self.window.show()
+    def pushButton_2(self):
 
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(240, 320)
+        MainWindow.resize(927, 797)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.buton1 = QtWidgets.QPushButton(self.centralwidget)
-        self.buton1.setGeometry(QtCore.QRect(40, 60, 93, 28))
-        self.buton1.setObjectName("buton1")
-
-        self.buton1.clicked.connect(self.talep)
-
-
-        self.buton2 = QtWidgets.QPushButton(self.centralwidget)
-        self.buton2.setGeometry(QtCore.QRect(40, 110, 93, 28))
-        self.buton2.setObjectName("buton2")
+        self.tab_3 = QtWidgets.QTabWidget(self.centralwidget)
+        self.tab_3.setEnabled(True)
+        self.tab_3.setGeometry(QtCore.QRect(20, 10, 461, 401))
+        self.tab_3.setObjectName("tab_3")
+        self.tab = QtWidgets.QWidget()
+        self.tab.setObjectName("tab")
+        self.label = QtWidgets.QLabel(self.tab)
+        self.label.setGeometry(QtCore.QRect(80, 110, 55, 16))
+        self.label.setObjectName("label")
+        self.dateEdit = QtWidgets.QDateEdit(self.tab)
+        self.dateEdit.setGeometry(QtCore.QRect(140, 180, 110, 22))
+        self.dateEdit.setObjectName("dateEdit")
+        self.label_2 = QtWidgets.QLabel(self.tab)
+        self.label_2.setGeometry(QtCore.QRect(80, 150, 55, 16))
+        self.label_2.setObjectName("label_2")
+        self.soyisimtxt = QtWidgets.QTextEdit(self.tab)
+        self.soyisimtxt.setGeometry(QtCore.QRect(140, 140, 231, 31))
+        self.soyisimtxt.setObjectName("soyisimtxt")
+        self.pushButton = QtWidgets.QPushButton(self.tab)
+        self.pushButton.setGeometry(QtCore.QRect(150, 230, 93, 28))
+        self.pushButton.setObjectName("pushButton")
+        self.label_3 = QtWidgets.QLabel(self.tab)
+        self.label_3.setGeometry(QtCore.QRect(80, 180, 55, 16))
+        self.label_3.setObjectName("label_3")
+        self.textEdit = QtWidgets.QTextEdit(self.tab)
+        self.textEdit.setGeometry(QtCore.QRect(140, 100, 231, 31))
+        self.textEdit.setObjectName("textEdit")
+        self.tab_3.addTab(self.tab, "")
+        self.tab_2 = QtWidgets.QWidget()
+        self.tab_2.setObjectName("tab_2")
+        self.textEdit_2 = QtWidgets.QTextEdit(self.tab_2)
+        self.textEdit_2.setGeometry(QtCore.QRect(160, 120, 211, 31))
+        self.textEdit_2.setObjectName("textEdit_2")
+        self.pushButton_2 = QtWidgets.QPushButton(self.tab_2)
+        self.pushButton_2.setGeometry(QtCore.QRect(210, 170, 93, 28))
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.label_4 = QtWidgets.QLabel(self.tab_2)
+        self.label_4.setGeometry(QtCore.QRect(120, 60, 311, 41))
+        self.label_4.setObjectName("label_4")
+        self.tab_3.addTab(self.tab_2, "")
+        self.horizontalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(540, 40, 321, 371))
+        self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.listWidget = QtWidgets.QListWidget(self.horizontalLayoutWidget)
+        self.listWidget.setObjectName("listWidget")
+        item = QtWidgets.QListWidgetItem()
+        item.setCheckState(QtCore.Qt.Checked)
+        self.listWidget.addItem(item)
+        self.horizontalLayout.addWidget(self.listWidget)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 240, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 927, 26))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -44,13 +81,26 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
+        self.tab_3.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.buton1.setText(_translate("MainWindow", "Talep"))
-        self.buton2.setText(_translate("MainWindow", "Onay"))
+        self.label.setText(_translate("MainWindow", "İsim"))
+        self.label_2.setText(_translate("MainWindow", "Soyisim"))
+        self.pushButton.setText(_translate("MainWindow", "Gonder"))
+        self.label_3.setText(_translate("MainWindow", "Tarih"))
+        self.tab_3.setTabText(self.tab_3.indexOf(self.tab), _translate("MainWindow", "Tab 1"))
+        self.pushButton_2.setText(_translate("MainWindow", "Giris"))
+        self.label_4.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:16pt; color:#17ff17;\">Departman Şifrenizi Girin</span></p></body></html>"))
+        self.tab_3.setTabText(self.tab_3.indexOf(self.tab_2), _translate("MainWindow", "Tab 2"))
+        __sortingEnabled = self.listWidget.isSortingEnabled()
+        self.listWidget.setSortingEnabled(False)
+        item = self.listWidget.item(0)
+        item.setText(_translate("MainWindow", "check"))
+        self.listWidget.setSortingEnabled(__sortingEnabled)
+        self.listWidget.setVisible(False)
 
 
 if __name__ == "__main__":
